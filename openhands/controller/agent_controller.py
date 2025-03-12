@@ -877,8 +877,6 @@ class AgentController:
             if self.state.end_id >= 0
             else self.event_stream.get_latest_event_id()
         )
-        
-        # Store the original start_id to preserve it
         original_start_id = self.state.start_id
 
         # sanity check
