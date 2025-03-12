@@ -975,7 +975,6 @@ class AgentController:
         else:
             self.state.history = events
 
-        # Restore the original start_id to preserve the beginning of history
         self.state.start_id = original_start_id
 
     def _handle_long_context_error(self) -> None:
